@@ -1,0 +1,349 @@
+:root {
+  --primary-color: #199cdb;
+  --text-color: #aaa;
+}
+* {
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+p {
+  color: var(--text-color);
+}
+i {
+  color: var(--primary-color);
+}
+li {
+  list-style: none;
+}
+.bg-grey {
+  background: #f7f7f7;
+}
+section > .container-1 {
+  width: 1170px;
+  margin: auto;
+  display: block;
+  /* padding: 20px 50px;
+	*/
+}
+
+#banner img {
+  width: 100%
+}
+#banner {
+  background-size: cover;
+  position: relative;
+}
+#banner .centered {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  text-align: center;
+  line-height: 35px;
+}
+#banner .overlay {
+  position: absolute;
+}
+#banner .overlay_0 {
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+}
+#nav-bar {
+  text-align: center;
+  overflow: hidden;
+}
+#nav-bar a {
+  display: block;
+  width: 20%;
+  color: #000;
+  text-align: center;
+  padding: 15px;
+  text-decoration: none;
+  font-size: 15px;
+  text-transform: uppercase;
+  border-right: 2px solid #eee;
+}
+#nav-bar a:last-child {
+  border-right: none;
+}
+#nav-bar a:nth-child(2) {
+  margin-right: 100px;
+}
+
+#nav-bar a:hover {
+  background-color: #eee;
+  color: black;
+}
+.avatar {
+  position: absolute;
+  padding: 7px;
+  margin: 0 50px;
+  z-index: 10;
+}
+nav .avatar img {
+  width: 150px;
+  border: 4px solid #fff;
+  border-radius: 50%;
+}
+
+#about .container-1 {
+  position: relative;
+  width: 100%;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+#target {
+  padding: 50px;
+  text-align: left;
+  line-height: 25px;
+}
+#personal-info {
+  padding: 50px;
+  background-color: #ccc;
+}
+#personal-info .info,
+#personal-info .contact {
+  padding: 0;
+}
+#personal-info .contact {
+  padding-top: 20px;
+}
+
+/* css selector li except first child*/
+#personal-info .contact li:not(:first-child) {
+  margin-left: 20px;
+}
+.section-title {
+  padding: 50px 0;
+}
+
+#personal-info li {
+  line-height: 30px;
+}
+#personal-info li span {
+  font-weight: 600;
+}
+#about .section-title {
+  padding-bottom: 30px;
+}
+#job-info .container-1 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto auto;
+  grid-auto-rows: minmax(30px, auto);
+  width: 80%;
+  gap: 10px;
+  padding: 10px;
+}
+.tablet-view{
+  display: none
+}
+.highlight {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 2px 5px;
+  border-radius: 3px;
+}
+#job-info .grid-title i {
+  color: #bcc3c7;
+  font-size: 40px;
+  justify-self: center; /*Centering in CSS Grid*/
+}
+.grid-component {
+  display: grid;
+  grid-template-rows: auto 1fr;
+  border: 1px solid var(--text-color);
+  padding: 20px 40px;
+}
+.grid-title {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  align-items: center;
+  padding: 20px 0;
+}
+.grid-title h1 {
+  grid-column: 1;
+}
+.grid-title i {
+  grid-column: 2;
+}
+.grid-content {
+  width: 100%;
+  padding: 10px;
+  text-align: justify;
+  overflow: hidden;
+  line-height: 25px;
+}
+.grid-content p:nth-child(2) {
+  font-style: italic;
+}
+.grid-content ul {
+  position: relative;
+  list-style: none;
+  margin-left: 0;
+  padding-left: 1.2em;
+}
+.grid-content li {
+  margin-bottom: 20px;
+}
+/* get 3 fisrt items */
+.grid-component:nth-child(-n + 3) ul li:before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: var(--primary-color);
+  font-size: 20px;
+}
+.circle {
+  border: 2px solid var(--primary-color);
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.circle i {
+  top: 50%;
+  font-size: 30px;
+}
+.language-item p,
+.skill-item p {
+  color: #000;
+}
+.language-item,
+.skill-item {
+  margin-bottom: 20px;
+}
+/* level */
+.level {
+  background: var(--text-color);
+  display: inline-block;
+  height: 2px;
+  margin-right: 10px;
+  width: 45px;
+}
+.level-fill {
+  background: #199cdb;
+  display: inline-block;
+  height: 2px;
+  margin-right: 10px;
+  width: 45px;
+}
+.certi-row {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 20px;
+}
+.certi-container-1 .certi-row:not(:first-child) {
+  border-top: 1px solid #d6c08d;
+  padding-top: 25px;
+}
+.certi-component {
+  display: flex;
+  justify-content: space-between;
+}
+.certi-component:not(:first-child) {
+  border-left: 1px solid #d6c08d;
+  padding-left: 20px;
+  margin-left: 20px;
+}
+.certi-component img {
+  width: 230px;
+  margin-right: 20px;
+}
+.certi-desc h4 {
+  margin-bottom: 15px;
+}
+#project {
+  margin-bottom: 40px;
+}
+.project-container-1 {
+  display: flex;
+  justify-content: space-between;
+}
+.project-component {
+  flex: 0 0 calc(33.33% - 10px); /* Use calc to calculate column size with margin10px  */
+  border: 1px solid #ddd;
+}
+.project-component img {
+  width: 100%;
+}
+
+/* all <div> elements where the parent is .project-component element */
+.project-component > div {
+  border-top: 1px solid #ddd;
+}
+.project-name h5 {
+  text-transform: uppercase;
+  font-weight: 500;
+  padding: 10px;
+}
+.project-time {
+  padding: 5px 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; 
+}
+.project-time i {
+  color: #696c6e;
+}
+.project-time p {
+  margin: 0;
+}
+
+.business,
+.role {
+  display: flex;
+}
+.project-desc {
+  width: 100%;
+  border-collapse: collapse; /*combine the top borders of the cells into a single border*/
+}
+/*nowrap để ngăn các dòng trong cột đầu tiên tự động xuống hàng */
+.project-desc td:first-child {
+  white-space: nowrap;
+  padding-right: 10px;
+  vertical-align: top;
+}
+.project-desc td {
+  border-top: 1px solid #ddd;
+  padding: 10px;
+  color: var(--text-color);
+}
+
+#project-desc td,
+#project h4 {
+  line-height: 23px;
+}
+
+.footer-container-1 {
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: space-evenly; /*spacing only even item*/
+  padding: 40px;
+  align-items: center;
+  flex-direction: row;
+}
+#footer i {
+  font-size: 40px;
+}
+#footer a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.footer-link {
+  display: flex;
+  align-items: center;
+}
+
+.footer-link span {
+  color: var(--text-color);
+}

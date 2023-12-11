@@ -1,0 +1,174 @@
+/* Media query cho mobile (độ rộng màn hình từ 0px đến 600px) */
+@media only screen and (max-width: 425px) and (min-width: 320px){
+  section,
+  section .container-1 {
+    width: 100%;
+  }
+
+  #certificate .section-title,
+  #project .section-title {
+    padding: 50px 0 30px 20px
+  }
+
+  #banner img {
+    width: auto
+  }
+  #banner .centered {
+    top: 40%
+  }
+  #banner {
+    overflow-x: hidden;
+    display: flex;
+    justify-content: center;
+  }
+
+  #nav-bar .avatar {
+    display: none;
+  }
+  
+
+  nav.container-1 {
+    width: screen; /* Chiếm toàn bộ chiều rộng trên mobile */
+    font-size: 12px;
+    display: block;
+  }
+  #nav-bar a {
+    width: 100%; /* Chiếm toàn bộ chiều rộng trên mobile */
+    height: 100%;
+    font-size: 14px;
+    padding: 10px
+  }
+  #nav-bar a:nth-child(2) {
+    margin-right: 0; /* Loại bỏ khoảng cách giữa a thứ 2 trên mobile */
+  }
+
+  #nav-bar a:last-child {
+    border-right: none;
+  }
+  #nav-bar a:hover {
+    background-color: transparent; /* Loại bỏ màu nền khi hover trên mobile */
+    color: var(--primary-color);
+  }
+  #nav-bar a i {
+    display:block
+  }
+  #target,
+  #personal-info {
+    padding: 30px;
+    text-align: left;
+    line-height: 25px;
+  }
+  #job-info .container-1 {
+    display: block;
+    width: 100%;
+    padding: 20px;
+  }
+  .tablet-view{
+    display: none
+  }
+  .grid-component .grid-content h5{
+    text-align: left
+  }
+  #certificate .certi-container-1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .certi-row {
+    display: block;
+    padding-bottom: 0;
+  }
+
+  .certi-container-1 .certi-row:not(:first-child) {
+    border-top: none;
+    padding-top: 0;
+  }
+
+  .certi-component {
+    display: block;
+    text-align: center;
+    padding-bottom: 20px;
+    line-height: 25px;
+    border-bottom: 1px solid #d6c08d;
+    padding-top: 20px;
+  }
+
+  .certi-component:last-child {
+    border-bottom: none;
+  }
+
+  .certi-component img {
+    width: 350px;
+    margin-right: 0;
+  }
+  .certi-component:not(:first-child) {
+    border-left: none;
+    padding-left: 0;
+    margin-left: 0;
+  }
+  .certi-component .certi-desc{
+    margin-top: 10px
+  }
+
+  .project-container-1 {
+    display: block;
+    padding: 20px
+  }
+  .project-container-1 .project-component:not(:first-child) {
+    margin-top: 10px
+  }
+  
+
+  #footer .container-1 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  #footer .container-1 span{
+    display: none
+  }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 375px) {
+  #banner .centered h1{
+    font-size: 20px;
+  }
+  #nav-bar a {
+    width: 100%; /* Chiếm toàn bộ chiều rộng trên mobile */
+    height: 100%;
+    font-size: 12px;
+    padding: 15px
+  }
+  #nav-bar a i {
+    display: block
+  }
+  .certi-component img {
+    width: 300px;
+    margin-right: 0;
+  }
+  .circle {
+    width: 60px;
+    height: 60px;
+  }
+  .icon-container-1 .icon-item:not(:first-child) {
+    margin-left: 15px
+  }
+  .project-time {
+    display: block;
+    padding: 5px;
+  }
+  .project-time div:not(:first-child) {
+    margin-top: 5px
+  }
+
+  .business,
+  .role {
+    margin-top: 10px
+  }
+
+  #certificate .section-title,
+  #project .section-title {
+    padding: 50px 0 30px 20px
+  }
+}
