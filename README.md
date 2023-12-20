@@ -47,5 +47,5 @@ Assignment 02 Stater
 └─ project-charter-capstone.html
 └─ project-charter-lonestar.html
 └─ project-charter-reborn.html
-
+Published site: https://buiphuoctai145.github.io/resume/
 ```
