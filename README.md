@@ -37,15 +37,15 @@ Assignment 02 Stater
 ├─ images
 │  ├─ Cert_PRF.png
 │  ├─ Cert_WEB.png
-│  ├─ Cert_NashTech.png
-│  ├─ Cert_DBI.png
 │  ├─ banner.jpg
-│  ├─ avatar.jpg
 │  ├─ default-avatar.webp
 │  ├─ funix-icon.png
 │  ├─ project_1.png
 │  ├─ project_2.png
 │  └─ project_3.png
 └─ index.html
+└─ project-charter-capstone.html
+└─ project-charter-lonestar.html
+└─ project-charter-reborn.html
 
 ```

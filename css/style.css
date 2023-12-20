@@ -271,6 +271,7 @@ nav .avatar img {
 .project-component {
   flex: 0 0 calc(33.33% - 10px); /* Use calc to calculate column size with margin10px  */
   border: 1px solid #ddd;
+  cursor: pointer;
 }
 .project-component img {
   width: 100%;
@@ -346,4 +347,51 @@ nav .avatar img {
 
 .footer-link span {
   color: var(--text-color);
+}
+
+/* Project charter css */
+.pj-charter-component {
+  border: 2px solid #000;
+  background-color: #f0f8ff;
+  padding: 10px
+}
+
+.pj-charter-component h3 {
+  font-weight: 600;
+  color: #0a1cff !important;
+  padding-top: 10px;
+  padding-left: 10px;
+}
+.pj-charter-component p {
+  color: #000 !important;
+}
+.charter-row{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.charter-row i {
+  font-size: 30px;
+  color: #000
+}
+.charter-row .circle {
+  font-size: 20px;
+  color: #000
+}
+.charter-row p:first-child {
+  margin-bottom: 10px !important
+}
+.center {
+  text-align: center
+}
+.scopes p:first-child{
+  text-transform: uppercase;
+  font-size: 18px !important
+}
+
+.back-btn i{
+  color: #fff;
+}
+.next-btn i{
+  color: #fff;
 }
